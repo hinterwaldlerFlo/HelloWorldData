@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using HelloWorldData.Models;
 
 namespace HelloWorldData.Models
 {
@@ -25,5 +26,7 @@ namespace HelloWorldData.Models
                     .HasMaxLength(50);
             });
         }
+
+        public DbSet<HelloWorldData.Models.MeasuredValues> MeasuredValues { get; set; }
     }
 }
