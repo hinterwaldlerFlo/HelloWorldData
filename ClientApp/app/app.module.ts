@@ -6,6 +6,7 @@ import { AppComponent } from './components/app/app.component'
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
+import { MeasuredValuesComponent } from './components/measuredValues/measuredValues.component';
 import { CounterComponent } from './components/counter/counter.component';
 
 import { PrimeComponent } from './components/prime/prime.component';
@@ -19,7 +20,8 @@ import { ButtonModule, GrowlModule } from 'primeng/primeng';
         CounterComponent,
         FetchDataComponent,
         HomeComponent,
-        PrimeComponent
+        PrimeComponent,
+        MeasuredValuesComponent
     ],
     imports: [
         UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
@@ -29,6 +31,7 @@ import { ButtonModule, GrowlModule } from 'primeng/primeng';
             { path: 'counter', component: CounterComponent },
             { path: 'prime', component: PrimeComponent },
             { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'measured-values', component: MeasuredValuesComponent },
             { path: '**', redirectTo: 'home' }
         ]),
         FormsModule,

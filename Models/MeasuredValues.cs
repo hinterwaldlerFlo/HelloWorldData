@@ -10,7 +10,7 @@ namespace HelloWorldData.Models
 
         public string Name { get; set; }
 
-        public DateTime Temperature { get; set; }
+        public DateTime Timestamp { get; set; }
 
         public float Value { get; set; }
     }
